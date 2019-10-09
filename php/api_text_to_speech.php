@@ -8,7 +8,7 @@ curl_setopt($ch, CURLOPT_URL, 'https://gateway-wdc.watsonplatform.net/text-to-sp
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($param));
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_USERPWD, 'apikey' . ':' . '{apikey}');
+curl_setopt($ch, CURLOPT_USERPWD, 'apikey' . ':' . '{apikey}');//replace with your apikey
 
 $headers = array();
 $headers[] = 'Content-Type: application/json';

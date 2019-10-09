@@ -9,7 +9,7 @@ $param = [
 ];
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, 'https://gateway-wdc.watsonplatform.net/assistant/api/v1/workspaces/{workspace_id}/message?version=2019-02-28');
+curl_setopt($ch, CURLOPT_URL, 'https://gateway-wdc.watsonplatform.net/assistant/api/v1/workspaces/{workspace_id}/message?version=2019-02-28');//replace with your workspace_id
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($param));
 curl_setopt($ch, CURLOPT_POST, 1);
