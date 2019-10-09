@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>IBM Watson WS Exploit</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/default.css">
+        <style>
+            .button-to {
+                margin: 10px;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .button-to a{
+                color: #5a6268;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="col3 offset-1"><h1>IBM Watson </h1></div>
+                <div class="col6 offset-1">                    
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="container-fluid bg-light" style="padding: 25px">
+                <div class="card" style="width: 95%;">
+                    <div class="card-header">
+                        <h5 class="card-title">
+                            <a class="a_toggle" href="#"><i class="fa fa-angle-right"></i></a>
+                            Chatbot
+                        </h5> 
+                    </div>
+                    <div class="card-body">
+                        <div id="bot_result">                            
+                        </div>                            
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="bot_text">                                    
+                            <div class="input-group-prepend">
+                                <button class="input-group-text" id="bot_submit">send</button>
+                            </div>
+                        </div>                                    
+                                
+                        <div id="ws_result"></div>
+                    </div>
+                </div>
+                <hr style="width: 90%">
+                <div class="card" style="width: 90%;">
+                    <div class="card-header">
+                        <h5 class="card-title">
+                            <a class="a_toggle" href="#"><i class="fa fa-angle-right"></i></a>
+                            Visual Recognition
+                        </h5> 
+                    </div>
+                    <div class="card-body">
+                        <form method="post" class="was-validated ws_form" action="php/api_ws.php">
+                            <div class="custom-file">
+                                <input type="file" accept="image/*" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </form>
+                        <div id="ws_result"></div>
+                    </div>
+                </div>
+                <hr style="width: 90%">
+                <div class="card" style="width: 90%;">
+                    <div class="card-header">
+                        
+                        <h5 class="card-title"><a class="a_toggle" href="#"><i class="fa fa-angle-right"></i></a>
+                            Watson Text To Speech</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">  
+                            <textarea id="tts_text" class="form-control" rows="5">Watson is a question-answering computer system capable of answering questions posed in natural language, developed in IBM's DeepQA project by a research team led by principal investigator David Ferrucci. Watson was named after IBM's founder and first CEO, industrialist Thomas J. Watson.The computer system was initially developed to answer questions on the quiz show Jeopardy! and, in 2011, the Watson computer system competed on Jeopardy! against legendary champions Brad Rutter and Ken Jennings, winning the first place prize of $1 million.</textarea>
+                        </div>
+                        <div class="form-group" style="text-align: right">
+                            <button id="tts_send" class="btn btn-success">Send</button>
+                        </div>
+                        <div id="tts_result">
+                            
+                        </div>
+                    </div>
+                </div>
+                <hr style="width: 90%">
+                <div class="card" style="width: 90%;">
+                    <div class="card-header">
+                        <h5 class="card-title">
+                            <a class="a_toggle" href="#"><i class="fa fa-angle-right"></i></a>
+                            Watson Tone Analyzer
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">  
+                            <textarea id="tas_text" class="form-control" rows="5">In February 2013, IBM announced that Watson software system's first 
+commercial application would be for utilization management decisions 
+in lung cancer treatment at Memorial Sloan Kettering Cancer Center, 
+New York City, in conjunction with WellPoint (now Anthem). 
+Manoj Saxena, IBM Watson's then business chief, said in 2013 
+that 90% of nurses in the field who use Watson now follow its guidance.</textarea>
+                        </div>
+                        <div class="form-group" style="text-align: right">
+                            <button id="tas_send" class="btn btn-success">Send</button>
+                        </div>
+                        <div id="tas_result">
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <footer>
+            
+        </footer>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/highlight.min.js"></script>
+        <script src="js/loadingoverlay.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="js/awesomefont.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+<!-- In February 2013, IBM announced that Watson software system's first 
+commercial application would be for utilization management decisions 
+in lung cancer treatment at Memorial Sloan Kettering Cancer Center, 
+New York City, in conjunction with WellPoint (now Anthem). 
+Manoj Saxena, IBM Watson's then business chief, said in 2013 
+that 90% of nurses in the field who use Watson now follow its guidance. -->
