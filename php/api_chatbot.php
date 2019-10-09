@@ -9,11 +9,11 @@ $param = [
 ];
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL, 'https://gateway-wdc.watsonplatform.net/assistant/api/v1/workspaces/7857d3bd-0734-47c4-a3bc-d128aa13d2be/message?version=2019-02-28');
+curl_setopt($ch, CURLOPT_URL, 'https://gateway-wdc.watsonplatform.net/assistant/api/v1/workspaces/{workspace_id}/message?version=2019-02-28');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($param));
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_USERPWD, 'apikey' . ':' . 'QfzF3PqjzbNGRMdcQYBvUPohCsMqRIa1yf4Fi1S5to5B');
+curl_setopt($ch, CURLOPT_USERPWD, 'apikey' . ':' . '{apikey}');
 
 $headers = array();
 $headers[] = 'Content-Type: application/json';

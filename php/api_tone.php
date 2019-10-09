@@ -12,7 +12,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   ); */
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($param));
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_USERPWD, 'apikey' . ':' . 'FcEWBT2upZZ853XSzdJHBtxA5xXnpowfz4avT6cNuxJS');
+curl_setopt($ch, CURLOPT_USERPWD, 'apikey' . ':' . '{apikey}');
 
 $headers = array();
 $headers[] = 'Content-Type: application/json';

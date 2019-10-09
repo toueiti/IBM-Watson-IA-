@@ -26,7 +26,7 @@ foreach ($files as $index => $file) {
 
 $headers = array("Content-Type" => "multipart/form-data");
 curl_setopt($ch, CURLOPT_URL, 'https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19');
-curl_setopt($ch, CURLOPT_USERPWD, 'apikey' . ':' . '2XjUr82yI0EoKGgKDBLbePW1p65jcNgCJ2RhbQjQWlNk');
+curl_setopt($ch, CURLOPT_USERPWD, 'apikey' . ':' . '{apikey}');
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
